@@ -18,9 +18,9 @@ while True:
     while 'EOFX' not in data.decode():
         data += s.recv(4096)
     datarr = data.decode().split('\r\n')
-    for line in datarr[:-3]:
+    for line in datarr[:-5]:
         print(line)
-    print("Current path: " + datarr[-3])
+    print("Current path: " + datarr[-5])
     nextcmd = input("%SBS% ")
     if nextcmd == 'quit':
         nextcmd += '\r\n'
