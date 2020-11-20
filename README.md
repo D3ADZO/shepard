@@ -26,7 +26,7 @@ Usage: run shepardsbind_serv.exe with no arguments.
 The client (attacker) is written using Python and takes one argument: the IP address of the victim's machine. 
 Usage: run shepardsbind_recv.py with one argument: <victim's IP>
 
-Running shepardsbind_recv.py with no arguments will return an error.
+Running shepardsbind_recv.py with no arguments will return an error. The prompt will look like: %SBS%
 
 ---Using them in conjunction---
 
