@@ -1,6 +1,6 @@
-SHEPARD 
+# SHEPARD 
 
----BITS---
+# ---BITS---
 
 This is an IN PROGRESS persistance tool using Windows Background Intelligent Transfer Service (BITS). 
 
@@ -17,7 +17,7 @@ Usage: run shepard.exe as Administrator with the following command line argument
   
 Running this executable with no arguments or an incorrect amount of arguments will cause shepard to exit cleanly.
 
----BINDSHELL---
+# ---BINDSHELL---
 
 The server (victim) is written using C#. It listens on port 6006.
 
@@ -28,7 +28,7 @@ Usage: run shepardsbind_recv.py with one argument: <victim's IP>
 
 Running shepardsbind_recv.py with no arguments will return an error. The prompt will look like: %SBS%
 
----Using them in conjunction---
+# ---Using them in conjunction---
 
 The only executable that must be on the victim's machine is shepard.exe. Host the download bindshell executable to a publicly accessible place. 
 Shepard will download and run the bindshell executable, and the user can now use the python reciever. If the shell is found and killed, it will restart after 30 seconds.
